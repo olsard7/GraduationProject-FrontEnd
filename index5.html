@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Контакты</title>
+    	<meta charset="utf-8">
+    	<meta name="viewport" content="initial-scale=1">
+        <link rel="icon" href="images/favicon.ico">
+    	<link rel="stylesheet" href="css/style.css">
+    	<link rel="stylesheet" href="css/form.css">
+    	<script src="js/jquery.js"></script>
+    </head>
+    <body style="verdana, helvetica, sans-serif">
+       	<div class="main">
+
+<!--==============================header=================================-->
+			<header>
+				<div class="container_12">
+					<div class="grid_3">
+			      		<object data="images/Mozarella_logotip.svg" type="image/svg+xml" width=200 height=60>
+							<div style="width: 510px; height: 570px; background: url('images/Mozarella_logotip.png') left top no-repeat"></div>
+						</object>
+						<h1>ИТАЛЬЯНСКИЙ РЕСТОРАН</h1>
+			      	</div>
+			      	<div class="grid_9">
+			      		<div class="menu_block">
+							<nav  class="" >
+								<ul class="sf-menu">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="index1.html">О нас</a></li>
+									<li><a href="index2.html">Меню</a></li>
+									<li><a href="index3.html">Интерьер</a></li>
+									<li><a href="index4.html">Новости </a></li>
+									<li class="current"><a href="index5.html">Контакты</a></li>
+								</ul>
+							</nav>
+							<div class="clear"></div>
+						</div>
+			           	<div class="clear"></div>
+			    	</div>
+			    </div>
+			</header>
+<!--=======content================================-->
+
+			<div class="content">
+				<div class="ic"></div>
+			  	<div class="container_12">
+			    	<div class="grid_6">
+			      		<h2>Как нас найти</h2>
+			            <div class="map">
+			            	<figure class="img_inner">
+			                  	<div class='width: 444px; height: 282px; overflow: hidden'>
+			                  	<img src="https://api-maps.yandex.ru/services/constructor/1.0/static/?sid=XvENmrxNHo_4YNx2ImPCADi-SwDeQ7Zj&width=600&height=450"
+			                  	 alt="Карта"/>
+			                  	</div>
+			               	</figure>
+			              	<address>
+			                    <dl>
+			                        <dt>
+			                        	<p>
+			                        		Mozarella,<br>
+			                                ресторан итальянской кухни.<br>
+			                                Минск, ул. Кузьмы Чорного, 15
+			                            </p>
+			                        </dt>
+			                        <dd><span>Городской:</span>210 36 82</dd>
+			                        <dd><span>МТС:</span>+37529 210 36 82</dd>
+			                        <dd><span>Velcome:</span>+37529 610 36 82</dd>
+			                    </dl>
+			                </address>
+			          	</div>
+			    	</div><!-- grid_6 -->
+			    	<div class="grid_10 prefix_1">
+			      		<h2>Оставьте свой отзыв</h2>
+			      		<form id="form" method=post action='http://fe.it-academy.by/TestForm.php'>
+			        		<div class="success_wrapper">
+			          			<div class="success">
+			          				Contact form submitted!<br>
+			            			<strong>We will be in touch soon.</strong>
+			          			</div>
+			        		</div>
+			      			<fieldset>
+			        			<label class="name">
+			          				<input type="text" placeholder="Имя:" name = 'myname'>
+			            			<br class="clear">
+			        			</label>
+			        			<label class="name">
+			          				<input type="text" placeholder="Фамилия:" name = 'fam'>
+			            			<br class="clear">
+			        			</label>
+			        			<label class="phone">
+			          				<input type="tel" placeholder="Телефон:" name = 'phone'>
+			            			<br class="clear">
+			        			</label>
+			        			<label class="email">
+			          				<input type="text" placeholder="E-mail:" name = 'email'>
+			            			<br class="clear">
+			        			</label>
+			      				<label class="message">
+			        				<textarea name = 'otziv'>Ваш отзыв:
+			        				</textarea>
+			          				<br class="clear">
+			      				</label>
+			      				<div class="clear"></div>
+			      				<div class="btns">
+			        				<a data-type="reset" class="btn" onclick = "form.reset()">сброс</a>
+			        				<a data-type="submit" class="btn" onclick = "form.submit()">отправить</a>
+			          				<div class="clear"></div>
+			      				</div>
+			      			</fieldset>
+			      		</form>
+			    	</div><!-- /grid5 prefix1 -->
+			    	<div class="clear"></div>
+
+<!--============================== bottom block =================================-->
+	    			<div class="bottom_block">
+	      				<div class="grid_6">
+	        				<h3>Мы в социальных сетях</h3>
+					        <div class="socials">
+					          <a href="#"></a>
+					          <a href="#"></a>
+					          <a href="#"></a>
+					        </div>
+	        				<nav>
+	        					<ul>
+				                   <li><a href="index.html">Главная</a></li>
+				                   <li ><a href="index1.html">О нас</a></li>
+				                   <li><a href="index2.html">Меню</a></li>
+				                   <li><a href="index3.html">Интерьер</a></li>
+				                   <li><a href="index4.html">Новости</a></li>
+				                   <li class="current"><a href="index5.html">Контакты</a></li>
+	                 			</ul>
+	                 		</nav>
+	      				</div><!-- / grid_6 -->
+	      				<div class="grid_6">
+	        				<h3>Подписаться на рассылку</h3>
+	    					<p class="col1">
+	    						Подпишитесь на рассылку новостей
+	    						<br>нашего ресторана
+	    					</p>
+	        				<form id="newsletter" method=get action='http://fe.it-academy.by/TestForm.php'>
+	                  			<label class="email">
+	                       			<input type="text" placeholder="Ваш e-mail:" name = 'e-mail'>
+	                       			<a href="#" class="btn" data-type="submit" onclick="form.submit()">
+	                       				подписаться
+	                       			</a>
+	                  			</label>
+	              			</form>
+	          			</div>
+	      			</div><!-- / bottom_block -->
+	      			<div class="clear"></div>
+	    		</div><!-- / container_12 -->
+	  		</div><!-- / content -->
+		</div><!-- / main -->
+<!--==============================footer=================================-->
+
+		<footer>
+  			<div class="container_12">
+    			<div class="grid_4">
+    				<h3 style="line-height: 1.5em; font-size: 1.2em; text-align: left">
+    					Mozzarella<br>
+    					итальянский ресторан<br>
+    					ул. Кузьмы Чорного, 15
+    				</h3>
+    			</div>
+    			<div class="grid_3">
+    				<h3 style="line-height: 1.5em; font-size: 1.2em; text-align: left">
+      					<address>
+        					<dl>
+            					<dd><span>Городской:</span>210 36 82</dd>
+            					<dd><span>МТС:</span>+37529 210 36 82</dd>
+            					<dd><span>Velcome:</span>+37529 610 36 82</dd>
+        					</dl>
+      					</address>
+    				</h3>
+    			</div><!-- /grid_3 -->
+    			<div class="grid_5">
+      				<div class="container">
+        			<h3 style="text-align: right; font-size: 1.2em">
+        				Разработка сайта - OLNA studio
+        			</h3>
+      				</div>
+    			</div>
+    			<div class="clear"></div>
+  			</div><!-- / container_12 -->
+		</footer>
+	</body>
+</html>
